@@ -1,12 +1,16 @@
 /*tailwindcss utility classes*/
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-.btn{
-    @apply py-2 px-4 font-semibold;
+/*Screen() */
+
+@media screen(md){
+    .rotate-0{
+        transform: rotate(0deg);
+    }
 }
 
-.btn-green{
-    @apply rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700;
+/* theme () */
+
+.content-area{
+    height: theme('spacing[2.5]');
+
 }
